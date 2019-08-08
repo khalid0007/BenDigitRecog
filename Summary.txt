@@ -24,7 +24,9 @@ We have implemented this by extracting features from each image by following met
    
  Generated data set: 6000 x 41 ( Last column represents Tag of each numbers.)
  
- We have run the data set on WEKA random forest classifier with 75 % split of Trainig Set.
+ We have run the data set on WEKA.
+ Classifiaction Algo: Random Forest Classifier
+ Data Split: 75 % split of Trainig Set.
  
  Following is the result of classifier:
  
