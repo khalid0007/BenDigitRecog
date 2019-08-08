@@ -1,4 +1,4 @@
-Partner of project: Ankur Manna.
+Project Partner: Ankur Manna.
 
 ------------------------<Data>---------------------------------
 Data set: cmater db 
