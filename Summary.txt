@@ -11,7 +11,7 @@ Link: https://scholar.google.co.in/citations?user=bDj0BUEAAAAJ&hl=en
 ------------------------------------------------</Reference>--------------------------------------
 
 ---------------------<Feature Calulation>------------------------------------------------
-We have implemented this by extracting features from each image by following methods:
+We have extracted features from each image by following methods:
 
 1. We have resized each image into 32x32
 2. Each image is divided into 8 octants.
