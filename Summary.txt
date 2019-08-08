@@ -5,10 +5,10 @@ Data set: cmater db
 Link: https://code.google.com/archive/p/cmaterdb/downloads
 -----------------------</Data>---------------------------------
 
-------------------------------------------------<Ref>--------------------------------------
+------------------------------------------------<Reference>--------------------------------------
 Reference: An MLP based Approach for Recognition of HandwrittenBangla'Numerals (Authors: Subhadip Basu, Nibaran Das, Ram Sarkar, Mahantapas Kundu, Mita Nasipuri, Dipak Kumar Basu)
 Link: https://scholar.google.co.in/citations?user=bDj0BUEAAAAJ&hl=en
-------------------------------------------------</Ref>--------------------------------------
+------------------------------------------------</Reference>--------------------------------------
 
 ---------------------<Feature Calulation>------------------------------------------------
 We have implemented this by extracting features from each image by following methods:
