@@ -76,7 +76,7 @@ Attributes:   41
               A37
               A38
               A39
-              Y
+              Y 
 Test mode:    split 75.0% train, remainder test
 
 === Classifier model (full training set) ===
@@ -87,13 +87,14 @@ Bagging with 100 iterations and base learner
 
 weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
 
-Time taken to build model: 4.49 seconds
+Time taken to build model: |4.49 seconds|
+
+-------------------------------------------------------<Results>-------------------------------------------------------------------
 
 === Evaluation on test split ===
 
-Time taken to test model on test split: 0.15 seconds
+Time taken to test model on test split: |0.15 seconds|
 
--------------------------------------------------------<Results>-------------------------------------------------------------------
 === Summary ===
 
 Correctly Classified Instances        1367               91.1333 %
