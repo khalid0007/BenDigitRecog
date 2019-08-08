@@ -15,9 +15,9 @@ We have extracted features from each image by following methods:
 
 1. We have resized each image into 32x32
 2. Each image is divided into 8 octants.
-3. In each octants we have calculated projections of shadow value on 3 edges of each octants.
+3. For each octants we have calculated projections of shadow figure on 3 edges of each octants.
    (8 x 3) = 24 features.
-4. For each octants we have calculated the centroids of shadows of values
+4. For each octants we have calculated the centroids of shadow figure [(0, 0) if no shadow exists in a particular octant]
    (8 x 2) = 16 features.
    
 ---------------------</Feature Calulation>------------------------------------------------
