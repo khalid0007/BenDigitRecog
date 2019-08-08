@@ -1,1 +1,1 @@
-This project identifies handwritten Bengali digits.
+Identification of handwritten Bengali digits.
