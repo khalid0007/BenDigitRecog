@@ -1,0 +1,140 @@
+Partner of project: Ankur Manna.
+
+------------------------<Data>---------------------------------
+Data set: cmater db 
+Link: https://code.google.com/archive/p/cmaterdb/downloads
+-----------------------</Data>---------------------------------
+
+------------------------------------------------<Ref>--------------------------------------
+Reference: An MLP based Approach for Recognition of HandwrittenBangla'Numerals (Authors: Subhadip Basu, Nibaran Das, Ram Sarkar, Mahantapas Kundu, Mita Nasipuri, Dipak Kumar Basu)
+Link: https://scholar.google.co.in/citations?user=bDj0BUEAAAAJ&hl=en
+------------------------------------------------</Ref>--------------------------------------
+
+---------------------<Feature Calulation>------------------------------------------------
+We have implemented this by extracting features from each image by following methods:
+
+1. We have resized each image into 32x32
+2. Each image is divided into 8 octants.
+3. In each octants we have calculated projections of shadow value on 3 edges of each octants.
+   (8 x 3) = 24 features.
+4. For each octants we have calculated the centroids of shadows of values
+   (8 x 2) = 16 features.
+   
+---------------------</Feature Calulation>------------------------------------------------
+   
+ Generated data set: 6000 x 41 ( Last column represents Tag of each numbers.)
+ 
+ We have run the data set on WEKA random forest classifier with 75 % split of Trainig Set.
+ 
+ Following is the result of classifier:
+ 
+ === Run information ===
+
+Scheme:       weka.classifiers.trees.RandomForest -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     data
+Instances:    6000
+Attributes:   41
+              A00
+              A01
+              A02
+              A03
+              A04
+              A05
+              A06
+              A07
+              A08
+              A09
+              A10
+              A11
+              A12
+              A13
+              A14
+              A15
+              A16
+              A17
+              A18
+              A19
+              A20
+              A21
+              A22
+              A23
+              A24
+              A25
+              A26
+              A27
+              A28
+              A29
+              A30
+              A31
+              A32
+              A33
+              A34
+              A35
+              A36
+              A37
+              A38
+              A39
+              Y
+Test mode:    split 75.0% train, remainder test
+
+=== Classifier model (full training set) ===
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+
+Time taken to build model: 4.49 seconds
+
+=== Evaluation on test split ===
+
+Time taken to test model on test split: 0.15 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        1367               91.1333 %
+Incorrectly Classified Instances       133                8.8667 %
+Kappa statistic                          0.9014
+Mean absolute error                      0.0523
+Root mean squared error                  0.1334
+Relative absolute error                 29.0305 %
+Root relative squared error             44.4514 %
+Total Number of Instances             1500     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.975    0.008    0.935      0.975    0.954      0.949    0.999     0.994     V0
+                 0.896    0.013    0.878      0.896    0.887      0.874    0.992     0.936     V1
+                 0.993    0.013    0.898      0.993    0.943      0.938    0.999     0.991     V2
+                 0.884    0.020    0.809      0.884    0.844      0.830    0.990     0.913     V3
+                 0.924    0.005    0.963      0.924    0.943      0.936    0.994     0.982     V4
+                 0.900    0.011    0.900      0.900    0.900      0.889    0.994     0.959     V5
+                 0.762    0.010    0.896      0.762    0.824      0.809    0.986     0.910     V6
+                 0.948    0.002    0.980      0.948    0.964      0.960    0.998     0.988     V7
+                 0.993    0.007    0.932      0.993    0.962      0.958    1.000     0.997     V8
+                 0.832    0.010    0.908      0.832    0.869      0.855    0.989     0.933     V9
+Weighted Avg.    0.911    0.010    0.912      0.911    0.911      0.902    0.994     0.961     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   e   f   g   h   i   j   <-- classified as
+ 157   0   0   1   0   1   0   0   0   2 |   a = V0
+   0 129   4   0   2   0   2   0   3   4 |   b = V1
+   0   0 149   0   0   0   0   0   0   1 |   c = V2
+   5   0   0 114   1   3   4   1   0   1 |   d = V3
+   0   2   3   0 158   2   1   1   2   2 |   e = V4
+   3   0   4   2   1 135   4   0   1   0 |   f = V5
+   2   0   1  21   1   8 112   0   0   2 |   g = V6
+   0   0   4   0   1   0   0 146   2   1 |   h = V7
+   0   1   0   0   0   0   0   0 138   0 |   i = V8
+   1  15   1   3   0   1   2   1   2 129 |   j = V9
+
+
+ 
+ 
+ 
+ 
+ 
+ 
